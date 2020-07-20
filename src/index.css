@@ -1,3 +1,18 @@
 body {
   margin: 0;
 }
+
+.dashboard {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  height: 100vh;
+  width: 100vw;
+}
+
+.sidebar {
+  grid-column: span 1;
+}
+
+.content {
+  grid-column: span 1;
+}
