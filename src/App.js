@@ -6,6 +6,9 @@ import ButtonPage from './pages/ButtonPage';
 function App() {
   return (
     <div className="dashboard">
+      <nav className="navbar">
+        Nav
+      </nav>
       <div className="sidebar">
         <Link to="/">Home</Link>
         <Link to="/button">Button</Link>
