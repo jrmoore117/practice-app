@@ -1,7 +1,16 @@
 import React from 'react';
+import './grid.css';
 
-export const Col = ({ span }) => (
-   <div style={{
-      gridColumn: `span ${span}`
-   }}></div>
-)
+export function Col({ padding, id, className, children }) {
+   return (
+      <div
+         id={id}
+         className={className}
+         style={{
+            padding: `${padding || "0"}`
+         }}
+      >
+         {children}
+      </div>
+   );
+}

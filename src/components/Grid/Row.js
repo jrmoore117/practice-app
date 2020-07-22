@@ -1,8 +1,11 @@
 import React from 'react';
+import './grid.css';
 
-export const Row = () => (
-   <div style={{
-      display: "grid",
-      gridTemplateColumns: "300px 1fr"
-   }}></div>
+export const Row = ({ id, className, children }) => (
+   <div
+      id={id}
+      className={className || "row"}
+   >
+      {children}
+   </div>
 )

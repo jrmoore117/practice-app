@@ -1,7 +1,22 @@
+@font-face {
+  font-family: 'Circular';
+  src: local('Circular'), url(./utils/fonts/lineto-circular-pro-book.ttf) format('truetype');
+}
+
+.circular {
+  font-family: 'Circular';
+}
+
+.open {
+  font-family: 'Open Sans', sans-serif;
+  color: rgb(35, 35, 35);
+  line-height: 1.75;
+}
+
 body {
   margin: 0;
-  font-family: 'Lato', sans-serif;
 }
+
 
 body * {
   box-sizing: border-box;
@@ -23,6 +38,14 @@ body * {
 .sidebar {
   grid-row: 2;
   grid-column: span 1;
+}
+
+.sidebar-title {
+  margin: 0;
+}
+
+.sidebar-button {
+  margin: px 0;
 }
 
 .content {

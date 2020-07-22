@@ -1,24 +1,27 @@
 import React from 'react';
-import { Router, Link } from "@reach/router";
-import HomePage from './pages/HomePage';
-import ButtonPage from './pages/ButtonPage';
+import { Router } from "@reach/router";
+import { HomePage, ButtonPage } from './pages';
+import { Row, Col, SidebarButton, SidebarTitle } from './components';
 
 function App() {
   return (
-    <div className="dashboard">
-      <nav className="navbar">
-        Nav
-      </nav>
-      <div className="sidebar">
-        <Link to="/">Home</Link>
-        <Link to="/button">Button</Link>
-      </div>
-      <div className="content">
-        <Router>
-          <HomePage path="/"/>
-          <ButtonPage path="/button"/>
-        </Router>
-      </div>
+    <div>
+      <Row>
+        <div style={{height: "50px"}}></div>
+      </Row>
+      <Row className="row-fluid">
+        <Col className="xl2">
+          <SidebarTitle title="Getting Started" />
+          <SidebarButton linkTo="/" buttonText="About"/>
+          <SidebarButton linkTo="/button" buttonText="Button"/>
+        </Col>
+        <Col className="xl10">
+          <Router>
+            <HomePage path="/"/>
+            <ButtonPage path="/button"/>
+          </Router>
+        </Col>
+      </Row>
     </div>
   );
 }
