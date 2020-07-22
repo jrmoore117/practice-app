@@ -1,9 +1,7 @@
 import React from 'react';
 
-const Button = () => (
+export const ButtonPage = () => (
    <div>
       Button Page
    </div>
 )
-
-export default Button;
