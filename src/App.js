@@ -9,13 +9,13 @@ function App() {
       <Row>
         <div style={{height: "50px"}}></div>
       </Row>
-      <Row className="row-fluid">
-        <Col className="xl2">
+      <Row>
+        <Col columns={2}>
           <SidebarTitle title="Getting Started" />
           <SidebarButton linkTo="/" buttonText="About"/>
           <SidebarButton linkTo="/button" buttonText="Button"/>
         </Col>
-        <Col className="xl10">
+        <Col columns={10}>
           <Router>
             <HomePage path="/"/>
             <ButtonPage path="/button"/>

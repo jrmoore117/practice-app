@@ -1,10 +1,12 @@
 import React from 'react';
-import './grid.css';
 
-export const Row = ({ id, className, children }) => (
+export const Row = ({ columns, spacing, children }) => (
    <div
-      id={id}
-      className={className || "row"}
+      style={{
+         display: 'grid',
+         gridTemplateColumns: `${columns || 'repeat(12, 1fr)'}`,
+         gridGap: `${spacing || '0'}`
+      }}
    >
       {children}
    </div>
