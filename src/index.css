@@ -15,40 +15,10 @@
 
 body {
   margin: 0;
+  background-color: #FAF8F0;
 }
 
 
 body * {
   box-sizing: border-box;
-}
-
-.dashboard {
-  width: 100vw;
-  height: 100vh;
-  display: grid;
-  grid-template-rows: 50px 1fr;
-  grid-template-columns: 300px 1fr;
-}
-
-.navbar {
-  grid-row: 1;
-  grid-column: span 2;
-}
-
-.sidebar {
-  grid-row: 2;
-  grid-column: span 1;
-}
-
-.sidebar-title {
-  margin: 0;
-}
-
-.sidebar-button {
-  margin: px 0;
-}
-
-.content {
-  grid-row: 2;
-  grid-column: span 1;
 }
