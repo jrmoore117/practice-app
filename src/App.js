@@ -7,7 +7,18 @@ function App() {
   return (
     <div>
       <Row>
-        <div style={{height: "50px"}}></div>
+        <div
+          className="circular" 
+          style={{
+            height: "50px",
+            display: 'flex',
+            alignItems: 'center',
+            color: 'black',
+            fontSize: '30px'
+          }}
+        >
+          tackle
+        </div>
       </Row>
       <Row>
         <Col columns={2}>
