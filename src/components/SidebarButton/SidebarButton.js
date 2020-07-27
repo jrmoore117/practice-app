@@ -1,12 +1,13 @@
 import React from 'react';
 import { Link } from '@reach/router';
+import './sidebarButton.css';
 
 export function SidebarButton({ linkTo, buttonText }) {
    return (
-      <Link to={linkTo}>
-         <div className="sidebar-button">
+      <div className="sidebar-button">
+         <Link to={linkTo}>
             {buttonText}
-         </div>
-      </Link>
+         </Link>
+      </div>
    );
 }

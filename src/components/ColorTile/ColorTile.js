@@ -5,11 +5,11 @@ export const ColorTile = ({ size, color }) => (
    <div 
       className="colorTile"   
       style={{
-         margin: '10px 100px 10px 0',
+         margin: '10px 10px 10px 0',
          width: `${size || '50px'}`,
          height: `${size || '50px'}`,
-         color: '#FAF8F0',
-         backgroundColor: `${color || '#A6E0DE'}`,
+         color: '#FFFFFF',
+         backgroundColor: `${color || '#FFFFFF'}`,
          display: 'flex',
          justifyContent: 'center',
          alignItems: 'center'
