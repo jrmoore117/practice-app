@@ -14,12 +14,12 @@ function App() {
             width: '100vw',
             display: 'flex',
             alignItems: 'center',
-            fontSize: '30px',
+            fontSize: '40px',
+            fontWeight: '600',
             boxShadow: '0 2px 2px 0 rgb(240, 240, 240)'
           }}
         >
-          {/* <img style={{ height: '35px', margin: '0 10px 0 20px' }} src="/assets/images/tackle.svg"/> */}
-          <img style={{ height: '35px', margin: '0 10px 0 20px' }} src="/assets/images/tackle-mar.svg"/>
+          <img style={{ height: '45px', margin: '0 0 0 20px' }} src="/assets/images/bob-shade.svg"/>
           tackle
         </div>
       </Row>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?> <!-- Created with Vectornator for iOS (http://vectornator.io/) --><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;" xmlns:vectornator="http://vectornator.io" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" version="1.1" viewBox="0 0 1024 1024">
+<metadata>
+<vectornator:setting key="DisplayWhiteBackground" value="0"/>
+<vectornator:setting key="RulersVisible" value="1"/>
+<vectornator:setting key="SnapToEdges" value="0"/>
+<vectornator:setting key="Units" value="Pixels"/>
+<vectornator:setting key="New" value="1"/>
+<vectornator:setting key="DynamicGuides" value="0"/>
+<vectornator:setting key="SnapToPoints" value="0"/>
+<vectornator:setting key="CMYKEnabledKey" value="0"/>
+<vectornator:setting key="SnapToGrid" value="0"/>
+<vectornator:setting key="SnapToGuides" value="0"/>
+<vectornator:setting key="GridSpacing" value="36"/>
+</metadata>
+<defs>
+<linearGradient y1="238.488" id="LinearGradient" x1="535.365" y2="238.488" x2="769.526" gradientUnits="userSpaceOnUse" gradientTransform="matrix(1 0 0 1 0 0)">
+<stop stop-color="#9e0505" offset="0.3675"/>
+<stop stop-color="#cb1717" offset="0.9175"/>
+</linearGradient>
+<linearGradient y1="165.337" id="LinearGradient_2" x1="613.985" y2="165.337" x2="771.043" gradientUnits="userSpaceOnUse" gradientTransform="matrix(1 0 0 1 0 0)">
+<stop stop-color="#9e0505" offset="0"/>
+<stop stop-color="#cb1717" offset="0.9175"/>
+</linearGradient>
+<linearGradient y1="533.513" id="LinearGradient_3" x1="141.909" y2="533.513" x2="882.091" gradientUnits="userSpaceOnUse" gradientTransform="matrix(1 0 0 1 0 0)">
+<stop stop-color="#a1a1a1" offset="0.415"/>
+<stop stop-color="#ffffff" offset="0.9075"/>
+</linearGradient>
+<linearGradient y1="637.469" id="LinearGradient_4" x1="141.909" y2="637.469" x2="846.415" gradientUnits="userSpaceOnUse" gradientTransform="matrix(1 0 0 1 0 0)">
+<stop stop-color="#9e0505" offset="0.415"/>
+<stop stop-color="#cb1717" offset="0.89"/>
+</linearGradient>
+</defs>
+<g id="Layer 1" vectornator:layerName="Layer 1">
+<path stroke="#353535" stroke-width="10" d="M647.014+146.813C665.306+109.394+699.897+88.7193+724.276+100.636C748.654+112.553+753.587+152.548+735.295+189.968C717.003+227.388+682.412+248.062+658.034+236.146C633.656+224.229+628.722+184.233+647.014+146.813Z" fill="none" stroke-linecap="round" opacity="1" stroke-linejoin="round"/>
+<path d="M631.393+120.424L763.118+192.293C769.078+195.545+771.274+203.013+768.022+208.973L690.179+351.649C686.927+357.609+679.459+359.805+673.498+356.553L541.773+284.684C535.813+281.432+533.617+273.964+536.869+268.004L614.712+125.328C617.964+119.368+625.433+117.172+631.393+120.424Z" opacity="1" fill="url(#LinearGradient)"/>
+<path d="M615.426+124.831C623.653+109.063+664.836+114.417+707.411+136.788C749.985+159.159+777.829+190.077+769.602+205.844C761.375+221.611+720.192+216.257+677.617+193.886C635.043+171.515+607.199+140.598+615.426+124.831Z" opacity="1" fill="url(#LinearGradient_2)"/>
+<path d="M141.909+533.513C141.909+329.118+307.604+163.422+512+163.422C716.396+163.422+882.091+329.118+882.091+533.513C882.091+737.909+716.396+903.604+512+903.604C307.604+903.604+141.909+737.909+141.909+533.513Z" opacity="1" fill="url(#LinearGradient_3)"/>
+<path d="M177.758+374.708C328.428+341.562+791.894+560.432+846.415+692.146C758.757+876.79+538.012+955.413+353.368+867.755C168.723+780.097+90.0999+559.352+177.758+374.708Z" opacity="1" fill="url(#LinearGradient_4)"/>
+</g>
+</svg>
