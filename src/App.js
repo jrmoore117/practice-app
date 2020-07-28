@@ -6,6 +6,7 @@ import { Row, Col, SidebarButton, SidebarTitle } from './components';
 function App() {
   return (
     <div>
+    <div style={{height: '100vh', width: 'auto', backgroundImage: "url('/assets/images/landing-2.svg')"}} />
       <Row>
         <div
           className="circular" 
@@ -25,10 +26,11 @@ function App() {
       </Row>
       <Row>
         <Col columns={2}>
-          <SidebarTitle title="Getting Started" />
-          <SidebarButton linkTo="/" buttonText="About"/>
-          <SidebarButton linkTo="/button" buttonText="Button"/>
+          <SidebarTitle title="Practice" />
+          <SidebarButton linkTo="/" buttonText="Home"/>
+          <SidebarTitle title="Components" />
           <SidebarButton linkTo="/color" buttonText="Color"/>
+          <SidebarButton linkTo="/button" buttonText="Button"/>
         </Col>
         <Col columns={10}>
           <Router>
