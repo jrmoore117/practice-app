@@ -27,16 +27,16 @@ function App() {
       <Row>
         <Col columns={2}>
           <SidebarTitle title="Practice" />
-          <SidebarButton linkTo="/" buttonText="Home"/>
+          <SidebarButton linkTo="/" buttonText="Home" />
           <SidebarTitle title="Components" />
-          <SidebarButton linkTo="/color" buttonText="Color"/>
-          <SidebarButton linkTo="/button" buttonText="Button"/>
+          <SidebarButton linkTo="/color" buttonText="Color" />
+          <SidebarButton linkTo="/button" buttonText="Button" />
         </Col>
         <Col columns={10}>
           <Router>
-            <HomePage path="/"/>
-            <ButtonPage path="/button"/>
-            <ColorPage path="/color"/>
+            <HomePage path="/" />
+            <ButtonPage path="/button" />
+            <ColorPage path="/color" />
           </Router>
         </Col>
       </Row>
