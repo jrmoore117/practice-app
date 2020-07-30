@@ -1,8 +1,8 @@
 import React from 'react';
-import { ColorTile } from '../components';
+import { ColorTile, Flex } from '../components';
 
 export const ColorPage = () => (
-   <div style={{ display: 'flex' }}>
+   <Flex>
       <div>
          <ColorTile color="#F3F0E2" size="100px" />
          <ColorTile color="#F7F5EB" size="100px" />
@@ -54,5 +54,5 @@ export const ColorPage = () => (
          <ColorTile color="#9B0C43" size="100px" />
          <ColorTile color="#D1105A" size="100px" />
       </div>
-   </div>
+   </Flex>
 )
