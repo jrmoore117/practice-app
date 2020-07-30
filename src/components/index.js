@@ -1,4 +1,5 @@
 export * from './ColorTile/ColorTile';
+export * from './Flex/Flex';
 export * from './Grid/Row';
 export * from './Grid/Col';
 export * from './SidebarButton/SidebarButton';
