@@ -6,7 +6,7 @@ import { Row, Col, SidebarButton, SidebarTitle } from './components';
 function App() {
   return (
     <div>
-    <div style={{height: '100vh', width: 'auto', backgroundImage: "url('/assets/images/landing-2.svg')"}} />
+      <div style={{height: '100vh', width: 'auto', backgroundImage: "url('/assets/images/landing-2.svg')"}} />
       <Row>
         <div
           className="circular" 
@@ -20,7 +20,7 @@ function App() {
             boxShadow: '0 2px 2px 0 rgb(240, 240, 240)'
           }}
         >
-          <img style={{ height: '45px', margin: '0 0 0 20px' }} src="/assets/images/bob-shade.svg"/>
+          <img style={{ height: '45px', margin: '0 0 0 20px' }} src="/assets/images/bob-shade.svg" alt="logo"/>
           tackle
         </div>
       </Row>
