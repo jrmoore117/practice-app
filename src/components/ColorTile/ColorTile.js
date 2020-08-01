@@ -1,17 +1,20 @@
+/* @jsx jsx */
 import React from 'react';
+import { css, jsx } from '@emotion/core';
 
 export const ColorTile = ({ size, color }) => (
    <div 
-      style={{
-         margin: '10px 10px 10px 0',
-         width: `${size || '50px'}`,
-         height: `${size || '50px'}`,
-         color: '#FFFFFF',
-         backgroundColor: `${color || '#FFFFFF'}`,
-         display: 'flex',
-         justifyContent: 'center',
-         alignItems: 'center'
-      }}
+      css={css`
+         margin: 10px 10px 10px 0;
+         width: ${size || '50px'};
+         height: ${size || '50px'};
+         color: #FFFFFF;
+         background-color: ${color || '#FFFFFF'};
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         border-radius: 8px;
+      `}
    >
       {color}
    </div>
