@@ -1,23 +1,13 @@
 import React from 'react';
 import { ColorTile, Flex, Box } from '../components';
+import { css, jsx } from '@emotion/core';
 
 export const ColorPage = () => (
    <Flex>
       <div>
          <ColorTile color="#F3F0E2" size="100px" />
          <ColorTile color="#F7F5EB" size="100px" />
-         {/* <ColorTile color="#F9F7F1" size="100px" /> */}
-         <Box
-            bg="#000000"
-            m="10px 10px 10px 0"
-            w="100px"
-            h="100px"
-            color="#FFFFFF"
-            display="flex"
-            justifyContent="center"
-            alignItems="center"
-            border="1px solid black"
-         >#000000</Box>
+         <ColorTile color="#F9F7F1" size="100px" css={css`border 1px solid black`}/>
       </div>
       <div>
          <ColorTile color="#383838" size="100px" />

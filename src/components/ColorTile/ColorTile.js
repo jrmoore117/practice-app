@@ -1,5 +1,4 @@
 import React from 'react';
-import './colorTile.css';
 
 export const ColorTile = ({ size, color }) => (
    <div 
@@ -12,7 +11,8 @@ export const ColorTile = ({ size, color }) => (
          backgroundColor: `${color || '#FFFFFF'}`,
          display: 'flex',
          justifyContent: 'center',
-         alignItems: 'center'
+         alignItems: 'center',
+         borderRadius: '8px'
       }}
    >
       {color}
