@@ -1,9 +1,14 @@
+/* @jsx jsx */
 import React from 'react';
-import './sidebarTitle.css';
+import { css, jsx } from '@emotion/core';
 
 export function SidebarTitle({ title }) {
    return (
-      <div className="sidebar-title">
+      <div css={css`
+         width: 100%;
+         padding: 20px 10px 0 20px;
+         font-size: 17px;
+      `}>
          {title}
       </div>
    );
