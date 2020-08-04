@@ -2,7 +2,6 @@
 import React from 'react';
 import { Link } from '@reach/router';
 import { css, jsx } from '@emotion/core';
-import './sidebarButton.css';
 
 const sidebarButtonStyles = css`
    padding: 10px 0 0 20px;
