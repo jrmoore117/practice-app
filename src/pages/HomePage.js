@@ -1,7 +1,7 @@
 /* @jsx jsx */
 import React, { useState, useEffect } from 'react';
 import { css, jsx } from '@emotion/core';
-import { Counter, RandomJoke } from '../components';
+import { Counter, RandomJoke, Form } from '../components';
 
 const bold = css`font-weight: 700;`;
 
@@ -14,6 +14,7 @@ export const HomePage = () => {
       <div>
          <Counter count={count} setCount={setCount}/>
          <RandomJoke />
+         <Form />
       </div>
    );
 }
