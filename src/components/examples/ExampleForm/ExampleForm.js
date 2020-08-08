@@ -1,7 +1,8 @@
 import React from 'react';
 import { useForm } from '../../../hooks';
+import { Form, TextInput, Checkbox, Radio } from '../../../components';
 
-export const Form = () => {
+export const ExampleForm = () => {
    const {form, bind, bindCheckbox, reset } = useForm({
       firstName: '',
       lastName: '',
@@ -18,14 +19,14 @@ export const Form = () => {
    return (
       <div>
          <h4>useForm: Custom Hook for Form State</h4>
-         <form onSubmit={handleSubmit}>
-            <input type="text" placeholder="First Name" {...bind("firstName")} />
-            <input type="text" placeholder="Last Name" {...bind("lastName")} />
-            <input type="text" placeholder="Email" {...bind("email")} />
-            <input type="checkbox" {...bindCheckbox("promoEmails")}/>
-            <input type="radio" {...bind("gender", "male")} />
-            <input type="radio" {...bind("gender", "female")} />
-            <input type="radio" {...bind("gender", "other")} />
+         <Form onSubmit={handleSubmit}>
+            <TextInput placeholder="First Name" {...bind("firstName")} />
+            <TextInput placeholder="Last Name" {...bind("lastName")} />
+            <TextInput placeholder="Email" {...bind("email")} />
+            <Checkbox {...bindCheckbox("promoEmails")}/>
+            <Radio {...bind("gender", "male")} />
+            <Radio {...bind("gender", "female")} />
+            <Radio {...bind("gender", "other")} />
             <select {...bind("city")}>
                <option disabled value="">Select a city</option>
                <option value="Rocklin">Rocklin</option>
@@ -33,7 +34,7 @@ export const Form = () => {
                <option value="San Francisco">San Francisco</option>
             </select>
             <input type="submit" value="submit" />
-         </form>
+         </Form>
       </div>
    );
 }
