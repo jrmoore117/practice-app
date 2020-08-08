@@ -6,12 +6,21 @@ export const useForm = initialFormState => {
       form,
       setForm,
       reset: () => setForm(initialFormState),
-      bind: (name) => ({
+      bind: (name, value) => ({
          name,
-         value: form[name],
+         value: value ? value : form[name],
          onChange: (event) => {
-            const { value } = event.target;
-            setForm(Object.assign({}, form, {[name]: value}));
+            const { name, value } = event.target;
+            setForm(Object.assign({}, form, { [name]: value }));
+         }
+      }),
+      bindCheckbox: (name) => ({
+         name,
+         value: name,
+         checked: form[name],
+         onChange: (event) => {
+            const { checked } = event.target;
+            setForm(Object.assign({}, form, { [name]: checked }));
          }
       })
    };
