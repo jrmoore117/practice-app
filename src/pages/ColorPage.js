@@ -4,56 +4,28 @@ import { css, jsx } from '@emotion/core';
 
 export const ColorPage = () => (
    <Flex>
-      <div>
-         <ColorTile color="#F3F0E2" size="100px" />
-         <ColorTile color="#F7F5EB" size="100px" />
-         <ColorTile color="#F9F7F1" size="100px" css={css`border 1px solid black`}/>
-      </div>
-      <div>
-         <ColorTile color="#383838" size="100px" />
-         <ColorTile color="#7D887A" size="100px" />
-         <ColorTile color="#DADAD2" size="100px" />
-         <ColorTile color="#FFFFFF" size="100px" />
-      </div>
-      <div>
-         <ColorTile color="#042A38" size="100px" />
-         <ColorTile color="#05394C" size="100px" />
-         <ColorTile color="#096586" size="100px" />
-      </div>
-      <div>
-         <ColorTile color="#2E364F" size="100px" />
-         <ColorTile color="#2D5D7C" size="100px" />
-         <ColorTile color="#4186B4" size="100px" />
-      </div>
-      <div>
-         <ColorTile color="#10455B" size="100px" />
-         <ColorTile color="#2AA1AF" size="100px" />
-         <ColorTile color="#E2F0F1" size="100px" />
-      </div>
-      <div>
-         <ColorTile color="#22443B" size="100px" />
-         <ColorTile color="#2F6053" size="100px" />
-         <ColorTile color="#438975" size="100px" />
-      </div>
-      <div>
-         <ColorTile color="#FAB038" size="100px" />
-         <ColorTile color="#FBC774" size="100px" />
-         <ColorTile color="#FDDFB0" size="100px" />
-      </div>
-      <div>
-         <ColorTile color="#ED431D" size="100px" />
-         <ColorTile color="#EF5939" size="100px" />
-         <ColorTile color="#F57B51" size="100px" />
-      </div>
-      <div>
-         <ColorTile color="#A6191F" size="100px" />
-         <ColorTile color="#D52029" size="100px" />
-         <ColorTile color="#E29F94" size="100px" />
-      </div>
-      <div>
-         <ColorTile color="#760933" size="100px" />
-         <ColorTile color="#9B0C43" size="100px" />
-         <ColorTile color="#D1105A" size="100px" />
-      </div>
+      <ColorTile color="#db1d34ff" size="100px" />
+      <ColorTile color="#ff3040ff" size="100px" />
+      <ColorTile color="#213cf2ff" size="100px" />
+      <ColorTile color="#365af2ff" size="100px" />
+      <ColorTile color="#5494d3ff" size="100px" />
+      <ColorTile color="#c1d6f4ff" size="100px" />
+      <ColorTile color="#9e9eefff" size="100px" />
+      <ColorTile color="#9494edff" size="100px" />
+      <ColorTile color="#5c5cb7ff" size="100px" />
+      <ColorTile color="#3a3eacff" size="100px" />
    </Flex>
 )
+
+/*
+$amaranth-red: #db1d34ff;
+$red-salsa: #ff3040ff;
+$blue-ryb: #213cf2ff;
+$ultramarine-blue: #365af2ff;
+$tufts-blue: #5494d3ff;
+$beau-blue: #c1d6f4ff;
+$maximum-blue-purple: #9e9eefff;
+$maximum-blue-purple-2: #9494edff;
+$liberty: #5c5cb7ff;
+$ocean-blue: #3a3eacff;
+*/ 
