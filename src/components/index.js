@@ -1,3 +1,4 @@
+export * from './Button/Button';
 export * from './Checkbox/Checkbox';
 export * from './ColorTile/ColorTile';
 export * from './Flex/Flex';
