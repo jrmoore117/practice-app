@@ -18,4 +18,4 @@ export const ColorTile = ({ size, color }) => (
    >
       {color}
    </div>
-)
+);
