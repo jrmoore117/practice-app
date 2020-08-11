@@ -3,7 +3,6 @@ import React from 'react';
 import { css, jsx } from '@emotion/core';
 
 const primary = css`
-   margin: 20px;
    min-height: 40px;
    min-width: 82px;
    padding: 0 16px;
@@ -31,7 +30,6 @@ const primary = css`
 `
 
 const secondary = css`
-   margin: 20px;
    min-height: 40px;
    min-width: 82px;
    padding: 0 16px;
