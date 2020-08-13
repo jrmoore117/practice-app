@@ -1,6 +1,5 @@
 import React from 'react';
 import { ColorTile, Flex } from '../components';
-import { css, jsx } from '@emotion/core';
 
 export const ColorPage = () => (
    <Flex>

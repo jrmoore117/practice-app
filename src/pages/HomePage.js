@@ -18,6 +18,9 @@ export const HomePage = () => {
         background-position: center;`}
          >
          </div>
+         <Counter count={count} setCount={setCount}/>
+         <RandomJoke />
+         <ExampleForm />
       </div>
    );
 }
