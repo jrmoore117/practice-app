@@ -1,6 +1,4 @@
-/* @jsx jsx */
 import React, { useState, useEffect } from 'react';
-import { css, jsx } from '@emotion/core';
 import { Counter, RandomJoke, ExampleForm } from '../components';
 
 export const HooksPage = () => {
