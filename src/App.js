@@ -1,17 +1,17 @@
-/* @jsx jsx */
 import React from 'react';
-import { css, jsx } from '@emotion/core';
 import { Router } from "@reach/router";
-import { HomePage, ComponentPage } from './pages';
-import { Row, Col, SidebarButton, SidebarTitle, Navbar, Button } from './components';
+import { HomePage, ComponentPage, ColorPage, ButtonPage, HooksPage } from './pages';
 
 function App() {
   return (
     <div>
-      <Navbar />
       <Router>
         <HomePage path="/" />
-        <ComponentPage path="/components" />
+        <ComponentPage path="/components">
+          <HooksPage path="/" />
+          <ColorPage path="/color" />
+          <ButtonPage path="/button" />
+        </ComponentPage>
       </Router>
     </div>
   );
