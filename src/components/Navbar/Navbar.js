@@ -69,7 +69,6 @@ export const Navbar = () => {
             <span>tackle</span>
          </Flex>
          <Flex alignItems="center">
-            {/* <span>GitHub</span> */}
             <Link to="/components">
                <Button type={scrollState === 'top' ? 'secondary' : null}>Get started</Button>
             </Link>
