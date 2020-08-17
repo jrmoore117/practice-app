@@ -1,24 +1,18 @@
-import React, { useState, useEffect } from 'react';
-import { Row, Col, SidebarButton, SidebarTitle, Navbar, Button } from '../components';
-import { ButtonPage, ColorPage } from '../pages';
+import React from 'react';
+import { Row, Col, SidebarButton, SidebarTitle } from '../components';
 
-export const ComponentPage = () => {
-   const [count, setCount] = useState(0);
-   useEffect(() => {
-      document.title = `Count: ${count}`;
-   }, [count]);
+export const ComponentPage = ({ children }) => {
    return (
       <Row>
          <Col columns={2}>
             <SidebarTitle title="Practice" />
-            <SidebarButton linkTo="/hooks" buttonText="Hooks" />
+            <SidebarButton linkTo="/components" buttonText="Hooks" />
             <SidebarTitle title="Components" />
-            <SidebarButton linkTo="/color" buttonText="Color" />
-            <SidebarButton linkTo="/button" buttonText="Button" />
+            <SidebarButton linkTo="/components/color" buttonText="Color" />
+            <SidebarButton linkTo="/components/button" buttonText="Button" />
          </Col>
          <Col columns={10}>
-            <ColorPage path="/color" />
-            <ButtonPage path="/button" />
+            {children}
          </Col>
       </Row>
    );
