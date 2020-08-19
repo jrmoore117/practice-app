@@ -12,5 +12,6 @@ export * from './SidebarTitle/SidebarTitle';
 export * from './TextInput/TextInput';
 
 export * from './examples/Counter/Counter';
-export * from './examples/RandomJoke/RandomJoke';
 export * from './examples/ExampleForm/ExampleForm';
+export * from './examples/RandomJoke/RandomJoke';
+export * from './examples/RefExample/RefExample';
