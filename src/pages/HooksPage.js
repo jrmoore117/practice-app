@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Counter, RandomJoke, ExampleForm } from '../components';
+import { Counter, RandomJoke, ExampleForm, RefExample } from '../components';
 
 export const HooksPage = () => {
    const [count, setCount] = useState(0);
@@ -11,6 +11,7 @@ export const HooksPage = () => {
          <Counter count={count} setCount={setCount} />
          <RandomJoke />
          <ExampleForm />
+         <RefExample />
       </div>
    );
 }
