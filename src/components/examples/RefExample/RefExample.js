@@ -1,4 +1,6 @@
 import React, { useState, useRef } from 'react';
+/* @jsx jsx */
+import { css, jsx } from '@emotion/core';
 
 const useForm = (initialFormState = {}) => {
    const [form, setForm] = useState(initialFormState);
@@ -6,12 +8,14 @@ const useForm = (initialFormState = {}) => {
       form,
       setForm,
       reset: () => setForm(initialFormState),
-      bind: (name, value) => ({
+      set: (name, settings) => ({
          name,
-         value: value || form[name],
+         value: settings ? settings.value : form[name],
+         required: settings ? settings.required : false,
+         minLength: settings ? settings.minLength : null,
+         maxLength: settings ? settings.maxLength : null,
          onChange: (event) => {
             const { name, value } = event.target;
-            console.log(value);
             setForm(Object.assign({}, form, { [name]: value }));
          }
       })
@@ -19,7 +23,7 @@ const useForm = (initialFormState = {}) => {
 };
 
 export const RefExample = () => {
-   const {form, bind, reset } = useForm({
+   const {form, set, reset } = useForm({
       test: ''
    })
    const element = useRef(null);
@@ -35,10 +39,18 @@ export const RefExample = () => {
             <div ref={element}>Hello world!</div>
             <button onClick={onClick}>Log Ref</button>
          </div>
-         <div>
-            <input type="text" {...bind("test")}/>
-            <button onClick={() => reset()}>Clear</button>
-         </div>
+         <form onSubmit={(e) => {
+            e.preventDefault();
+            console.log(form);
+            reset();
+         }}>
+            <input
+               type="text"
+               {...set("test", { required: true, minLength: 5, maxLength: 10 })}
+               css={css`color: red; &:valid{ color: green; }`}
+            />
+            <input type="submit" value="Clear"/>
+         </form>
       </div>
    );
 }
