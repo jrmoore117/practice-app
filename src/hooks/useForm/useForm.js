@@ -1,12 +1,12 @@
 import { useState } from "react";
 
-export const useForm = (initialFormState = {}) => {
+export const useForm = (initialFormState) => {
    const [form, setForm] = useState(initialFormState);
    return {
       form,
       setForm,
       reset: () => setForm(initialFormState),
-      bind: (name, value) => ({
+      set: (name, value) => ({
          name,
          value: value || form[name],
          onChange: (event) => {
@@ -14,7 +14,7 @@ export const useForm = (initialFormState = {}) => {
             setForm(Object.assign({}, form, { [name]: value }));
          }
       }),
-      bindCheckbox: (name) => ({
+      setCheckbox: (name) => ({
          name,
          value: name,
          checked: form[name],
