@@ -3,7 +3,7 @@ import { useForm } from '../../../hooks';
 import { Form, TextInput, Checkbox, Radio } from '../../../components';
 
 export const ExampleForm = () => {
-   const {form, bind, bindCheckbox, reset } = useForm({
+   const { form, set, setCheckbox, reset } = useForm({
       firstName: '',
       lastName: '',
       email: '',
@@ -20,14 +20,14 @@ export const ExampleForm = () => {
       <div>
          <h4>useForm: Custom Hook for Form State</h4>
          <Form onSubmit={handleSubmit}>
-            <TextInput placeholder="First Name" {...bind("firstName")} />
-            <TextInput placeholder="Last Name" {...bind("lastName")} />
-            <TextInput placeholder="Email" {...bind("email")} />
-            <Checkbox {...bindCheckbox("promoEmails")}/>
-            <Radio {...bind("gender", "male")} />
-            <Radio {...bind("gender", "female")} />
-            <Radio {...bind("gender", "other")} />
-            <select {...bind("city")}>
+            <TextInput placeholder="First Name" {...set("firstName")} />
+            <TextInput placeholder="Last Name" {...set("lastName")} />
+            <TextInput placeholder="Email" {...set("email")} />
+            <Checkbox {...setCheckbox("promoEmails")}/>
+            <Radio {...set("gender", "male")} />
+            <Radio {...set("gender", "female")} />
+            <Radio {...set("gender", "other")} />
+            <select {...set("city")}>
                <option disabled value="">Select a city</option>
                <option value="Rocklin">Rocklin</option>
                <option value="Sacramento">Sacramento</option>
