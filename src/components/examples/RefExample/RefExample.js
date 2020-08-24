@@ -2,7 +2,7 @@ import React, { useState, useRef } from 'react';
 /* @jsx jsx */
 import { css, jsx } from '@emotion/core';
 
-const useForm = (initialFormState = {}) => {
+const useForm = (initialFormState) => {
    const [form, setForm] = useState(initialFormState);
    return {
       form,
@@ -46,7 +46,8 @@ export const RefExample = () => {
          }}>
             <input
                type="text"
-               {...set("test", { required: true, minLength: 5, maxLength: 10 })}
+               // figure out why form won't reset when settings passed as second argument
+               {...set("test")}
                css={css`color: red; &:valid{ color: green; }`}
             />
             <input type="submit" value="Clear"/>
