@@ -1,26 +1,7 @@
 import React, { useState, useRef } from 'react';
 /* @jsx jsx */
 import { css, jsx } from '@emotion/core';
-
-const useForm = (initialFormState) => {
-   const [form, setForm] = useState(initialFormState);
-   return {
-      form,
-      setForm,
-      reset: () => setForm(initialFormState),
-      set: (name, settings) => ({
-         name,
-         value: settings && settings.value ? settings.value : form[name],
-         required: settings && settings.required,
-         minLength: settings && settings.minLength,
-         maxLength: settings && settings.maxLength,
-         onChange: (event) => {
-            const { name, value } = event.target;
-            setForm(Object.assign({}, form, { [name]: value }));
-         }
-      })
-   };
-};
+import { useForm } from '../../../hooks';
 
 export const RefExample = () => {
    const {form, set, reset } = useForm({
