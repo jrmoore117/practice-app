@@ -24,9 +24,9 @@ export const ExampleForm = () => {
             <TextInput placeholder="Last Name" {...set("lastName")} />
             <TextInput placeholder="Email" {...set("email")} />
             <Checkbox {...setCheckbox("promoEmails")}/>
-            <Radio {...set("gender", "male")} />
-            <Radio {...set("gender", "female")} />
-            <Radio {...set("gender", "other")} />
+            <Radio {...set("gender", { value: "male" })} />
+            <Radio {...set("gender", { value: "female" })} />
+            <Radio {...set("gender", { value: "other" })} />
             <select {...set("city")}>
                <option disabled value="">Select a city</option>
                <option value="Rocklin">Rocklin</option>
