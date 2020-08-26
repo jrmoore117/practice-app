@@ -6,9 +6,12 @@ export const useForm = (initialFormState) => {
       form,
       setForm,
       reset: () => setForm(initialFormState),
-      set: (name, value) => ({
+      set: (name, settings) => ({
          name,
-         value: value || form[name],
+         value: settings && settings.value ? settings.value : form[name],
+         required: settings && settings.required,
+         minLength: settings && settings.minLength,
+         maxLength: settings && settings.maxLength,
          onChange: (event) => {
             const { name, value } = event.target;
             setForm(Object.assign({}, form, { [name]: value }));
