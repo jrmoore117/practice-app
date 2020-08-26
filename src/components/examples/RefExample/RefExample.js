@@ -10,10 +10,10 @@ const useForm = (initialFormState) => {
       reset: () => setForm(initialFormState),
       set: (name, settings) => ({
          name,
-         value: settings ? settings.value : form[name],
-         required: settings ? settings.required : false,
-         minLength: settings ? settings.minLength : null,
-         maxLength: settings ? settings.maxLength : null,
+         value: settings && settings.value ? settings.value : form[name],
+         required: settings && settings.required,
+         minLength: settings && settings.minLength,
+         maxLength: settings && settings.maxLength,
          onChange: (event) => {
             const { name, value } = event.target;
             setForm(Object.assign({}, form, { [name]: value }));
@@ -47,7 +47,7 @@ export const RefExample = () => {
             <input
                type="text"
                // figure out why form won't reset when settings passed as second argument
-               {...set("test")}
+               {...set("test", { required: true, minLength: 5, maxLength: 40})}
                css={css`color: red; &:valid{ color: green; }`}
             />
             <input type="submit" value="Clear"/>
