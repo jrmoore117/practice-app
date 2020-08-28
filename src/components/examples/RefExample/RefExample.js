@@ -29,7 +29,7 @@ export const RefExample = () => {
                type="text"
                // figure out why form won't reset when settings passed as second argument
                {...set("test", { required: true, minLength: 5, maxLength: 40})}
-               css={css`color: red; &:valid{ color: green; }`}
+               css={css`color: #FF3040; &:valid{ color: #365AF2; }`}
             />
             <input type="submit" value="Clear"/>
          </form>
