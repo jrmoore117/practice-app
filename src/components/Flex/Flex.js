@@ -1,7 +1,8 @@
 import React from 'react';
+import { Box } from '../Box/Box';
 
-export const Flex = ({ align, justify, children }) => (
-   <div style={{display: 'flex', justifyContent: justify, alignItems: align}}>
+export const Flex = ({ children, ...props }) => (
+   <Box display="flex" {...props}>
       {children}
-   </div>
-)
+   </Box>
+);
