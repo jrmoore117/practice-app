@@ -1,22 +1,23 @@
-/* @jsx jsx */
 import React from 'react';
-import { css, jsx } from '@emotion/core';
+import { Flex } from '../Flex/Flex';
 
 export const ColorTile = ({ size, color, border }) => (
-   <div 
-      css={css`
-         margin: 10px 10px 10px 0;
-         width: ${size || '50px'};
-         height: ${size || '50px'};
-         color: #FFFFFF;
-         background-color: ${color || '#FFFFFF'};
-         border: ${border};
-         border-radius: 8px;
-         display: flex;
-         align-items: center;
-         justify-content: center;
-      `}
+   <Flex
+      // Space
+      m="10px 10px 10px 0"
+      // Color
+      color="#FFFFFF"
+      bg={color || '#FFFFFF'}
+      // Layout
+      width={size || '50px'}
+      height={size || '50px'}
+      // Border
+      border={border}
+      borderRadius="8px"
+      // Flexbox
+      alignItems="center"
+      justifyContent="center"
    >
       {color}
-   </div>
+   </Flex>
 );
