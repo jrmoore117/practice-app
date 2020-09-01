@@ -1,5 +1,5 @@
 export default {
-   breakpoints: ['501px', '1000px', '1500px'],
+   breakpoints: ["35em", "48em", "62em", "80em"],
    colors: {
       white: '#FFFFFF',
       black: '#000000',
@@ -14,7 +14,7 @@ export default {
          '#1b1918',
          '#131211',
          '#0b0a0a',
-         '#040303'
+         '#040303',
       ],
       red: [
          '#ffeaec',
@@ -27,7 +27,7 @@ export default {
          '#b3222d',
          '#801820',
          '#4c0e13',
-         '#190506'
+         '#190506',
       ],
       blue: [
          '#ebeffe',
@@ -40,7 +40,7 @@ export default {
          '#263fa9',
          '#1b2d79',
          '#101b49',
-         '#050918'
+         '#050918',
       ],
       purple: [
          '#ebecf7',
@@ -53,7 +53,7 @@ export default {
          '#292b78',
          '#1d1f56',
          '#111334',
-         '#060611'
+         '#060611',
       ],
       indigo: [
          '#e8e9ed',
@@ -66,7 +66,7 @@ export default {
          '#101933',
          '#0c1225',
          '#070b16',
-         '#020407'
+         '#020407',
       ],
       coral: [
          '#ffeff0',
@@ -79,7 +79,7 @@ export default {
          '#b34046',
          '#802e32',
          '#4c1b1e',
-         '#19090a'
+         '#19090a',
       ],
       yellow: [
          '#fffbef',
@@ -92,7 +92,7 @@ export default {
          '#b39840',
          '#806d2e',
          '#4c411c',
-         '#191609'
+         '#191609',
       ],
       green: [
          '#f1faf0',
@@ -105,9 +105,101 @@ export default {
          '#508c4a',
          '#396435',
          '#223c20',
-         '#0b140b'
+         '#0b140b',
       ]
-   }
+   },
+   fonts: {
+      body: "'Nunito Sans', sans-serif",
+      heading: "'Nunito Sans', sans-serif",
+      mono: "Menlo, monospace",
+   },
+   fontSizes: {
+      xs: "12px",
+      sm: "14px",
+      md: "16px",
+      lg: "18px",
+      xl: "20px",
+      "2xl": "24px",
+      "3xl": "28px",
+      "4xl": "36px",
+      "5xl": "48px",
+      "6xl": "64px",
+   },
+   fontWeights: {
+      light: 300,
+      normal: 400,
+      medium: 600,
+      bold: 700,
+      heavy: 800,
+   },
+   lineHeights: {
+      normal: "normal",
+      none: "1",
+      shorter: "1.25",
+      short: "1.375",
+      base: "1.5",
+      tall: "1.625",
+      taller: "2",
+   },
+   letterSpacings: {
+      tighter: "-0.05em",
+      tight: "-0.025em",
+      normal: "0",
+      wide: "0.025em",
+      wider: "0.05em",
+      widest: "0.1em",
+   },
+   space: {
+      px: "1px",
+      "0": "0",
+      "1": "0.25rem",
+      "2": "0.5rem",
+      "3": "0.75rem",
+      "4": "1rem",
+      "5": "1.25rem",
+      "6": "1.5rem",
+      "8": "2rem",
+      "10": "2.5rem",
+      "12": "3rem",
+      "16": "4rem",
+      "20": "5rem",
+      "24": "6rem",
+      "32": "8rem",
+      "40": "10rem",
+      "48": "12rem",
+      "56": "14rem",
+      "64": "16rem",
+   },
+   sizes: {
+      full: "100%",
+      "3xs": "14rem",
+      "2xs": "16rem",
+      xs: "20rem",
+      sm: "24rem",
+      md: "28rem",
+      lg: "32rem",
+      xl: "36rem",
+      "2xl": "42rem",
+      "3xl": "48rem",
+      "4xl": "56rem",
+      "5xl": "64rem",
+      "6xl": "72rem",
+   },
+   zIndices: {
+      hide: -1,
+      auto: "auto",
+      base: 0,
+      docked: 10,
+      dropdown: 1000,
+      sticky: 1100,
+      banner: 1200,
+      overlay: 1300,
+      modal: 1400,
+      popover: 1500,
+      skipLink: 1600,
+      toast: 1700,
+      tooltip: 1800,
+   },
 }
 
 // colors: {
