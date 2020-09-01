@@ -1,22 +1,9 @@
 body {
   margin: 0;
-  color: rgb(35, 35, 35);
-  font-family: 'Nunito Sans', sans-serif;
+  /* color: rgb(35, 35, 35); */
+  /* font-family: 'Nunito Sans', sans-serif; */
 }
 
 body * {
   box-sizing: border-box;
 }
-
-/*
-  $amaranth-red: rgba(219, 29, 52, 1);
-  $red-salsa: rgba(255, 48, 64, 1);
-  $blue-ryb: rgba(33, 60, 242, 1);
-  $ultramarine-blue: rgba(54, 90, 242, 1);
-  $tufts-blue: rgba(84, 148, 211, 1);
-  $beau-blue: rgba(193, 214, 244, 1);
-  $maximum-blue-purple: rgba(158, 158, 239, 1);
-  $maximum-blue-purple-2: rgba(148, 148, 237, 1);
-  $liberty: rgba(92, 92, 183, 1);
-  $ocean-blue: rgba(58, 62, 172, 1);
-*/
