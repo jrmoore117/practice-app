@@ -1,54 +1,34 @@
 import React from 'react';
 import styled from '@emotion/styled'
-import css from '@styled-system/css'
-import { 
-   space,
-   color,
-   typography,
-   layout,
-   flexbox,
-   grid,
-   background,
-   border,
-   position,
-   shadow,
-   variant
-} from 'styled-system';
+import { variant } from 'styled-system';
 
-export const Button = styled('button')(
-   space,
-   color,
-   typography,
-   layout,
-   flexbox,
-   grid,
-   background,
-   border,
-   position,
-   shadow,
-   // use for base styles
-   css({
-      transition: 'all 200ms',
-      height: '50px',
-      width: '100px',
-      background: `linear-gradient(0deg, ${({theme, shade}) => theme.colors[shade][5]} 0%, ${({theme, shade}) => theme.colors[shade][4]} 100%)`
-   }),
-   // use for varying styles
-   variant({
-      variants: {
-        primary: {
-          color: 'red.8',
-          '&:hover': {
-            color: 'coral.5'
-          }
-         },
-         secondary: {
-            color: 'green.2',
-            bg: 'red.2'
-        },
-      }
-    })
-);
+export const Button = styled.button`
+   outline: none;
+   margin: 20px;
+   padding: 0 1rem;
+   height: 2.25rem;
+   font-size: 1rem;
+   font-family: 'Nunito Sans', sans-serif;
+   font-weight: 600;
+   border-radius: 0.375rem;
+   transition: all 100ms;
+   cursor: pointer;
+   ${({ theme: {colors} }) => 
+      variant({
+         variants: {
+            primary: {
+               color: colors.gray[4],
+               border: '0.1rem solid',
+               borderColor: colors.gray[1],
+               background: 'transparent',
+            },
+            secondary: {
+
+            },
+         }
+      })
+   }
+`
 
 Button.defaultProps = {
    variant: 'primary'
