@@ -25,6 +25,7 @@ export const Box = styled.div`
    ${border}
    ${position}
    ${shadow}
+   /* try to recreate pseudobox from chakra _hover, _focus, etc props */
    cursor: ${props => props.cursor || null};
    transition: ${props => props.transition || null};
 `
